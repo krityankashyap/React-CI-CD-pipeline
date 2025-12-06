@@ -35,7 +35,7 @@ jobs:
         run: npm run build                 # builds the React project for production  
 
       - name: "Upload build artifacts"
-        uses: actions/upload-artifacts@v4
+        uses: actions/upload-artifact@v4
         with:
           name: build
           path: dist                     # uploads the build artifacts for later use  
