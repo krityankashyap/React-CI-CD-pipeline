@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Setup node js"
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v4    # Use the latest version of setup-node
         with:
           node-version: "21"
+
+        - name: "Check node version"
+          run: node --version  
