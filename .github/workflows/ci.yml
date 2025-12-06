@@ -27,3 +27,9 @@ jobs:
 
       - name: "Install dependencies"
         run: npm install                   # installs the project dependencies
+
+      - name: "Run tests"
+        run: npm test                      # runs the test suite  
+
+      - name: "Build the project"
+        run: npm run build                 # builds the React project for production  
